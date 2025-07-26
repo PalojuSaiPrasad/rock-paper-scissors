@@ -6,6 +6,7 @@ const GameSchema = new mongoose.Schema({
   result: String,
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 }, { timestamps: true });
+//nothing changed
 
 module.exports = mongoose.model('Game', GameSchema);
 
